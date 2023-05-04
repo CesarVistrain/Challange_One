@@ -1,0 +1,48 @@
+<!--Forma de la página web-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Encriptador curso one</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.svg" alt="logo"> <!-- agregamos una imagen llamada logo-->
+    </header>
+    <main>
+        <section class="seccion1"> <!--agregamos las secciones y clases-->
+            <div class="contenedor-cajatexto"> <!--creamos una clase del recuadro para almacenar el texto-->
+                <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea> <!--agregamos un area de tipo texto para poder escribir-->
+            </div>
+            <div class="alerta"> <!--creamos una clase alerta-->
+                <img src="Imagenes/alerta.svg" alt="alerta"> <!--insertamos otra imagen-->
+                      <p>Solo letras minusculas y sin acentos</p> <!--agregamos el texto-->
+            </div>
+            <div class="contenedor-boton"> <!--empezamos a formar los botones para encriptar y desencriptar-->
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
+            </div>
+        </section>
+        <section class="seccion2"> <!--sección 2 para la imagen con el muñequito-->
+            <div class="contenedor-img">
+                <img src="Imagenes/Muñeco.svg" alt="munieco">
+            </div>
+            <div class="contenedor-parrafo"> <!--textos para las indicaciones-->
+                <h3>Ningún mensaje fue <br>encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="copiar"> <!--creamos el boton de copiar-->
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
